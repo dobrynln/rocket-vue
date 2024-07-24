@@ -1,0 +1,38 @@
+.city-overview {
+  margin-bottom: 20px;
+  .barcelona {
+    display: flex;
+    align-items: center;
+    &-left {
+      height: 440px;
+      &__img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-right {
+      margin-left: 30px;
+      margin-right: 30px;
+      &__descr {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+      &__button {
+        font-weight: 400;
+        font-size: 17px;
+        border: none;
+        border-bottom: 3px solid $orange;
+        background: none;
+        padding: 0 0 2px 0;
+        cursor: pointer;
+        transition: color .2s ease-in-out;
+        &:hover {
+            color: $orange;
+        }
+      }
+    }
+  }
+}
